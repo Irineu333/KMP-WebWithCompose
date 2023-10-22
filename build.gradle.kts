@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.9.0"
+    id("org.jetbrains.compose") version "1.5.3"
 }
 
 group = "org.example"
@@ -7,6 +8,7 @@ version = "1.0-DEV"
 
 repositories {
     mavenCentral()
+    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
 java {
@@ -27,7 +29,14 @@ kotlin {
 
     sourceSets {
 
-        val jsMain by getting
-
+        val jsMain by getting {
+            dependencies {
+                implementation(compose.material3)
+            }
+        }
     }
+}
+
+compose.experimental {
+    web.application {}
 }
