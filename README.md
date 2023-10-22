@@ -1,6 +1,6 @@
 #  [Template] KMP Web With Compose
 
-Template of a kotlin multiplatform project with js target and compose multiplatform.
+Template of a Kotlin Multiplatform project with Kotlin/JS target and Compose Multiplatform.
 
 ## Versions
 - Compose: 1.5.3
