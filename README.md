@@ -1,8 +1,9 @@
-#  [Template] KMP Empty Project
+#  [Template] KMP Web With Compose
 
-Template of an empty kotlin multiplatform project.
+Template of a kotlin multiplatform project with js target and compose multiplatform.
 
 ## Versions
+- Compose: 1.5.3
 - Kotlin: 1.9.0
 - Gradle: 8.2
 - JDK: 19
