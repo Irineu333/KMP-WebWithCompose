@@ -18,11 +18,16 @@ java {
 
 kotlin {
 
-    // implement project targets
-    // https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
+    js {
+
+        binaries.executable()
+
+        browser()
+    }
 
     sourceSets {
-        // implement project source sets
-        // https://kotlinlang.org/docs/multiplatform-discover-project.html#source-sets
+
+        val jsMain by getting
+
     }
 }
